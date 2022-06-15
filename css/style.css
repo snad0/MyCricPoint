@@ -1,0 +1,204 @@
+*{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+#navbar{
+
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+
+}
+#logo img{
+    width: 50px;
+    height: 50px;
+    margin-top: 3px;
+}
+#navbar ul{
+    display: flex;
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+#navbar ul li{
+    list-style: none;
+  font-size: 1.2rem;
+}
+#navbar ul li a{
+    color: whitesmoke;
+    display: block;
+    padding: 2px 22px;
+    border-radius: 20px;
+    text-decoration: none; 
+    font-size: 18px;
+}
+#navbar ul li a:hover{
+    cursor: pointer;
+    color: gray;
+
+}
+.main{
+    display: flex;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50, -50);
+
+}
+.icon{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: 0px 12px;
+    border-radius: 50px;
+    transition: all 0.8s;
+   
+}
+.icon:hover{
+    cursor: pointer;
+    background: #e60073;
+    box-shadow: 0 0 20px #e60073;
+}
+.icon:hover:nth-child(2){
+    background: #1877f2;
+    box-shadow: 0 0 20px #1877f2;
+}
+svg image{
+    position: absolute;
+    transform: translate(-50,-90);
+}
+img{
+    width: 40px;
+}
+
+.icon i{
+   
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 19%;
+    transform: translate(-50, -50);
+}
+
+
+svg circle{
+    stroke-dasharray: 100;
+    transition: all .8s;
+}
+.icon:hover svg circle{
+    stroke-dasharray: 160;
+}
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+  
+}
+#home::before{
+    content: "";
+    background: url("../background.jpeg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#home h1{
+
+    text-align: center;
+    font-size: 2.5rem;
+    color: whitesmoke;
+
+}
+
+.box{
+    border: 2px solid black;
+    margin: 25px 50px;
+    width: 35%;
+    height: 100%;
+    padding: 25px 40px;
+    background-color: #0b1f20;
+    opacity: 0.7;
+    border-radius: 15px;
+                
+}
+.box p{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+#score{
+    /* display: flex; */
+    
+    height: 350px;
+    background-color: #464343;
+    
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+#story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100%;
+    width: 100%;
+     background:url("https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/299000/299073.4.jpg") no-repeat center center/cover;
+     
+
+}
+
+.container p{
+    background-color: #dbd6ce;
+    margin: 20px 25px;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px 10px;
+    height: 50%;
+    
+}
+.container p span{
+    display: none;
+    
+}
+#btn{
+    padding: 5px 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: whitesmoke;
+    background-color: #464343;
+}
+#btn:hover{
+    cursor: pointer;
+    background-color: black;
+}
+footer{
+    background-color: rgb(69 113 179 / 83%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    height: 34px;
+    
+    
+    
+}
+.footer{
+    text-align: center;
+}
